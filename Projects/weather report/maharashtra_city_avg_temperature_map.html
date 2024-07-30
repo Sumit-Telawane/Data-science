@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f139ad92c0f632c88a61850d59cf3bd8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f139ad92c0f632c88a61850d59cf3bd8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f139ad92c0f632c88a61850d59cf3bd8 = L.map(
+                "map_f139ad92c0f632c88a61850d59cf3bd8",
+                {
+                    center: [19.537922289999997, 75.84677323],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fc7789fb148c53312cfd09efeacfe15f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_fc7789fb148c53312cfd09efeacfe15f.addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var marker_b6b6e2860ebf7c3a32efe5e6d0f43d36 = L.marker(
+                [19.1627725, 74.8580243],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_edc03f6005a54ec9b06aa8ca771e56cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b6b6e2860ebf7c3a32efe5e6d0f43d36.setIcon(icon_edc03f6005a54ec9b06aa8ca771e56cb);
+        
+    
+        var popup_77db05c8cfb600a32ae4e09b1b612bb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa9042f15e5becb5c31241cdad045953 = $(`<div id="html_aa9042f15e5becb5c31241cdad045953" style="width: 100.0%; height: 100.0%;">Ahmednagar<br>Average Temperature: 23.40°C</div>`)[0];
+                popup_77db05c8cfb600a32ae4e09b1b612bb1.setContent(html_aa9042f15e5becb5c31241cdad045953);
+            
+        
+
+        marker_b6b6e2860ebf7c3a32efe5e6d0f43d36.bindPopup(popup_77db05c8cfb600a32ae4e09b1b612bb1)
+        ;
+
+        
+    
+    
+            var marker_f448724293b865a87ba914d810cda86d = L.marker(
+                [20.7618122, 77.1921157],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_7b1e176370c5ec77fb197770f58313fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f448724293b865a87ba914d810cda86d.setIcon(icon_7b1e176370c5ec77fb197770f58313fc);
+        
+    
+        var popup_a293f953db2bae5174aa2d974611ef81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80bd7f63aca31b81c1fcdcb6a04ddf3a = $(`<div id="html_80bd7f63aca31b81c1fcdcb6a04ddf3a" style="width: 100.0%; height: 100.0%;">Akola<br>Average Temperature: 24.97°C</div>`)[0];
+                popup_a293f953db2bae5174aa2d974611ef81.setContent(html_80bd7f63aca31b81c1fcdcb6a04ddf3a);
+            
+        
+
+        marker_f448724293b865a87ba914d810cda86d.bindPopup(popup_a293f953db2bae5174aa2d974611ef81)
+        ;
+
+        
+    
+    
+            var marker_cf24d08f245438819949a21010dec7d4 = L.marker(
+                [21.1545412, 77.6442962],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_9e9e8de1307d6c7b893f87f756f10ef9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cf24d08f245438819949a21010dec7d4.setIcon(icon_9e9e8de1307d6c7b893f87f756f10ef9);
+        
+    
+        var popup_4ff46ea35d1dd726d752af0674294974 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9282ef313a0c99b8ddd6df28162699b = $(`<div id="html_c9282ef313a0c99b8ddd6df28162699b" style="width: 100.0%; height: 100.0%;">Amravati<br>Average Temperature: 23.92°C</div>`)[0];
+                popup_4ff46ea35d1dd726d752af0674294974.setContent(html_c9282ef313a0c99b8ddd6df28162699b);
+            
+        
+
+        marker_cf24d08f245438819949a21010dec7d4.bindPopup(popup_4ff46ea35d1dd726d752af0674294974)
+        ;
+
+        
+    
+    
+            var marker_1cecc88acfc8934a8360d2c8299928a2 = L.marker(
+                [19.877263, 75.3390241],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_0073d5c9cb838ee3b2da7f0f1ff1fe4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1cecc88acfc8934a8360d2c8299928a2.setIcon(icon_0073d5c9cb838ee3b2da7f0f1ff1fe4c);
+        
+    
+        var popup_d19f66fdd56a59f3db3c733522b97279 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48e837906541946e9b2872853086e582 = $(`<div id="html_48e837906541946e9b2872853086e582" style="width: 100.0%; height: 100.0%;">Aurangabad<br>Average Temperature: 23.72°C</div>`)[0];
+                popup_d19f66fdd56a59f3db3c733522b97279.setContent(html_48e837906541946e9b2872853086e582);
+            
+        
+
+        marker_1cecc88acfc8934a8360d2c8299928a2.bindPopup(popup_d19f66fdd56a59f3db3c733522b97279)
+        ;
+
+        
+    
+    
+            var marker_771c92440b9c118971eaccbedb827fc8 = L.marker(
+                [18.9918442, 75.909784],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_57685d8908473bdafa3f69661acbda7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_771c92440b9c118971eaccbedb827fc8.setIcon(icon_57685d8908473bdafa3f69661acbda7a);
+        
+    
+        var popup_42e2d1495e3278e40558d9262d5b6639 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d4f75f775a3c0fe5b327f8a7fc21ff8 = $(`<div id="html_5d4f75f775a3c0fe5b327f8a7fc21ff8" style="width: 100.0%; height: 100.0%;">Beed<br>Average Temperature: 22.70°C</div>`)[0];
+                popup_42e2d1495e3278e40558d9262d5b6639.setContent(html_5d4f75f775a3c0fe5b327f8a7fc21ff8);
+            
+        
+
+        marker_771c92440b9c118971eaccbedb827fc8.bindPopup(popup_42e2d1495e3278e40558d9262d5b6639)
+        ;
+
+        
+    
+    
+            var marker_4db6c9d9ce0acdcdabf0b3f67d8e1160 = L.marker(
+                [21.1225869, 79.794509],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_c31a4e4ca5b51845cf5201b18a362679 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4db6c9d9ce0acdcdabf0b3f67d8e1160.setIcon(icon_c31a4e4ca5b51845cf5201b18a362679);
+        
+    
+        var popup_250c4c1dbaf1a5ce6343151a6286a1d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74b3df3b28b17a01faa14e6612971cbd = $(`<div id="html_74b3df3b28b17a01faa14e6612971cbd" style="width: 100.0%; height: 100.0%;">Bhandara<br>Average Temperature: 24.51°C</div>`)[0];
+                popup_250c4c1dbaf1a5ce6343151a6286a1d6.setContent(html_74b3df3b28b17a01faa14e6612971cbd);
+            
+        
+
+        marker_4db6c9d9ce0acdcdabf0b3f67d8e1160.bindPopup(popup_250c4c1dbaf1a5ce6343151a6286a1d6)
+        ;
+
+        
+    
+    
+            var marker_601d70545a973f3eb494de8f6710f7bc = L.marker(
+                [20.562845, 76.4086986],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_745d37097e13fe3641ff810f8ab87661 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_601d70545a973f3eb494de8f6710f7bc.setIcon(icon_745d37097e13fe3641ff810f8ab87661);
+        
+    
+        var popup_6aef45723b8f1702b87d519e907c2462 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70cda0a0333db094a98b030fd644a836 = $(`<div id="html_70cda0a0333db094a98b030fd644a836" style="width: 100.0%; height: 100.0%;">Buldhana<br>Average Temperature: 23.38°C</div>`)[0];
+                popup_6aef45723b8f1702b87d519e907c2462.setContent(html_70cda0a0333db094a98b030fd644a836);
+            
+        
+
+        marker_601d70545a973f3eb494de8f6710f7bc.bindPopup(popup_6aef45723b8f1702b87d519e907c2462)
+        ;
+
+        
+    
+    
+            var marker_d72bf7aa54e9831d92fdd9bdd7a73e59 = L.marker(
+                [20.0967555, 79.5045475],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_41c38282afe0be471fd3b389d887761f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d72bf7aa54e9831d92fdd9bdd7a73e59.setIcon(icon_41c38282afe0be471fd3b389d887761f);
+        
+    
+        var popup_df20e1b96cacba9ef8b4ef7e3d0994cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c404785733f7157f1bfbd8a052c31ded = $(`<div id="html_c404785733f7157f1bfbd8a052c31ded" style="width: 100.0%; height: 100.0%;">Chandrapur<br>Average Temperature: 25.70°C</div>`)[0];
+                popup_df20e1b96cacba9ef8b4ef7e3d0994cc.setContent(html_c404785733f7157f1bfbd8a052c31ded);
+            
+        
+
+        marker_d72bf7aa54e9831d92fdd9bdd7a73e59.bindPopup(popup_df20e1b96cacba9ef8b4ef7e3d0994cc)
+        ;
+
+        
+    
+    
+            var marker_e71259860ed2658de07cd99d85cb9c01 = L.marker(
+                [21.1305215, 74.4900614],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_26bad827e64163000da5b63e131ff35f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e71259860ed2658de07cd99d85cb9c01.setIcon(icon_26bad827e64163000da5b63e131ff35f);
+        
+    
+        var popup_f17ea4e9422ba54e955a2bf61d7870aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_775454cccdc69aa57558889160d267be = $(`<div id="html_775454cccdc69aa57558889160d267be" style="width: 100.0%; height: 100.0%;">Dhule<br>Average Temperature: 25.08°C</div>`)[0];
+                popup_f17ea4e9422ba54e955a2bf61d7870aa.setContent(html_775454cccdc69aa57558889160d267be);
+            
+        
+
+        marker_e71259860ed2658de07cd99d85cb9c01.bindPopup(popup_f17ea4e9422ba54e955a2bf61d7870aa)
+        ;
+
+        
+    
+    
+            var marker_d65f636149a6442ad6338a56e70ce279 = L.marker(
+                [19.5431163, 77.1739432],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_3d64778ba0fd9f76cd3638b4b86ca38a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d65f636149a6442ad6338a56e70ce279.setIcon(icon_3d64778ba0fd9f76cd3638b4b86ca38a);
+        
+    
+        var popup_34a05e650e493d5c3031562d9f250abf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b340eff894254445311045feeb70a191 = $(`<div id="html_b340eff894254445311045feeb70a191" style="width: 100.0%; height: 100.0%;">Hingoli<br>Average Temperature: 24.28°C</div>`)[0];
+                popup_34a05e650e493d5c3031562d9f250abf.setContent(html_b340eff894254445311045feeb70a191);
+            
+        
+
+        marker_d65f636149a6442ad6338a56e70ce279.bindPopup(popup_34a05e650e493d5c3031562d9f250abf)
+        ;
+
+        
+    
+    
+            var marker_f94ddf8c486b106f5411063999ae6c56 = L.marker(
+                [20.8428826, 75.5261246],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_8eaafd8966eb69990e64ec85c11199b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f94ddf8c486b106f5411063999ae6c56.setIcon(icon_8eaafd8966eb69990e64ec85c11199b6);
+        
+    
+        var popup_ffe582e02ef3e0cd14ee5c063d1853cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a6ace7e95c4b746e32f5f0badc935d9 = $(`<div id="html_0a6ace7e95c4b746e32f5f0badc935d9" style="width: 100.0%; height: 100.0%;">Jalgaon<br>Average Temperature: 24.77°C</div>`)[0];
+                popup_ffe582e02ef3e0cd14ee5c063d1853cd.setContent(html_0a6ace7e95c4b746e32f5f0badc935d9);
+            
+        
+
+        marker_f94ddf8c486b106f5411063999ae6c56.bindPopup(popup_ffe582e02ef3e0cd14ee5c063d1853cd)
+        ;
+
+        
+    
+    
+            var marker_443a989c696f3c689a109469128e3da9 = L.marker(
+                [19.918833, 75.8708599],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_05a97543b5677ae578a87a8f493a3ef2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_443a989c696f3c689a109469128e3da9.setIcon(icon_05a97543b5677ae578a87a8f493a3ef2);
+        
+    
+        var popup_cf1e1d294bec0bb3a2fc822c4a189f3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bf4aa59068cdee89a0fb90a224bb6c3 = $(`<div id="html_7bf4aa59068cdee89a0fb90a224bb6c3" style="width: 100.0%; height: 100.0%;">Jalna<br>Average Temperature: 23.95°C</div>`)[0];
+                popup_cf1e1d294bec0bb3a2fc822c4a189f3c.setContent(html_7bf4aa59068cdee89a0fb90a224bb6c3);
+            
+        
+
+        marker_443a989c696f3c689a109469128e3da9.bindPopup(popup_cf1e1d294bec0bb3a2fc822c4a189f3c)
+        ;
+
+        
+    
+    
+            var marker_8027da0f49b509e8e6dbf2964b480e6b = L.marker(
+                [16.7028412, 74.2405329],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_27a4fd76eadb2cf6a524d1ea6193c160 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8027da0f49b509e8e6dbf2964b480e6b.setIcon(icon_27a4fd76eadb2cf6a524d1ea6193c160);
+        
+    
+        var popup_ad8a6441712f6ddfb7ff40d0d3a4d2cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c5a8b8d57f337e244ca837cb39446ac = $(`<div id="html_3c5a8b8d57f337e244ca837cb39446ac" style="width: 100.0%; height: 100.0%;">Kolhapur<br>Average Temperature: 22.98°C</div>`)[0];
+                popup_ad8a6441712f6ddfb7ff40d0d3a4d2cd.setContent(html_3c5a8b8d57f337e244ca837cb39446ac);
+            
+        
+
+        marker_8027da0f49b509e8e6dbf2964b480e6b.bindPopup(popup_ad8a6441712f6ddfb7ff40d0d3a4d2cd)
+        ;
+
+        
+    
+    
+            var marker_50ae61539762b1f593aa19ba46039ff3 = L.marker(
+                [18.3515907, 76.7554236],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_42a540d40695342e55e95cfc4b16320f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_50ae61539762b1f593aa19ba46039ff3.setIcon(icon_42a540d40695342e55e95cfc4b16320f);
+        
+    
+        var popup_80abba8a5df3940ee99d9958bc17bad7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b6513103224875c442b824058fcfd83 = $(`<div id="html_5b6513103224875c442b824058fcfd83" style="width: 100.0%; height: 100.0%;">Latur<br>Average Temperature: 23.39°C</div>`)[0];
+                popup_80abba8a5df3940ee99d9958bc17bad7.setContent(html_5b6513103224875c442b824058fcfd83);
+            
+        
+
+        marker_50ae61539762b1f593aa19ba46039ff3.bindPopup(popup_80abba8a5df3940ee99d9958bc17bad7)
+        ;
+
+        
+    
+    
+            var marker_2683abd1c336682ae4052082584f9059 = L.marker(
+                [19.0785451, 72.878176],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_51e6455a5ddaca6c2a9991a90b868a7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2683abd1c336682ae4052082584f9059.setIcon(icon_51e6455a5ddaca6c2a9991a90b868a7e);
+        
+    
+        var popup_04f079be37f0faa47c71509c3c227472 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba15235bedda110c23142015e4aa7913 = $(`<div id="html_ba15235bedda110c23142015e4aa7913" style="width: 100.0%; height: 100.0%;">Mumbai<br>Average Temperature: 27.49°C</div>`)[0];
+                popup_04f079be37f0faa47c71509c3c227472.setContent(html_ba15235bedda110c23142015e4aa7913);
+            
+        
+
+        marker_2683abd1c336682ae4052082584f9059.bindPopup(popup_04f079be37f0faa47c71509c3c227472)
+        ;
+
+        
+    
+    
+            var marker_d1f8af10014be5f492c4c7912a2db169 = L.marker(
+                [21.1498134, 79.0820556],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_c8a9eb1353f04b316577e1c4f64a3953 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d1f8af10014be5f492c4c7912a2db169.setIcon(icon_c8a9eb1353f04b316577e1c4f64a3953);
+        
+    
+        var popup_a366ca0e023d547e3a70087a60752920 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f22db238057d804e9054f5edcd2b7825 = $(`<div id="html_f22db238057d804e9054f5edcd2b7825" style="width: 100.0%; height: 100.0%;">Nagpur<br>Average Temperature: 26.11°C</div>`)[0];
+                popup_a366ca0e023d547e3a70087a60752920.setContent(html_f22db238057d804e9054f5edcd2b7825);
+            
+        
+
+        marker_d1f8af10014be5f492c4c7912a2db169.bindPopup(popup_a366ca0e023d547e3a70087a60752920)
+        ;
+
+        
+    
+    
+            var marker_c7cb6a81312a3ac4aef5d88fdb8b1eee = L.marker(
+                [21.5141622, 74.5405513],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_62ce44d1fc91125de944942a2549a33f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c7cb6a81312a3ac4aef5d88fdb8b1eee.setIcon(icon_62ce44d1fc91125de944942a2549a33f);
+        
+    
+        var popup_dfa9bf2c70deb7be87ebfac06dd65935 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91febd2095a0c0050fc400186bb1cf54 = $(`<div id="html_91febd2095a0c0050fc400186bb1cf54" style="width: 100.0%; height: 100.0%;">Nandurbar<br>Average Temperature: 24.93°C</div>`)[0];
+                popup_dfa9bf2c70deb7be87ebfac06dd65935.setContent(html_91febd2095a0c0050fc400186bb1cf54);
+            
+        
+
+        marker_c7cb6a81312a3ac4aef5d88fdb8b1eee.bindPopup(popup_dfa9bf2c70deb7be87ebfac06dd65935)
+        ;
+
+        
+    
+    
+            var marker_046e5dd62ae10127e72c2bae218a8c54 = L.marker(
+                [20.0112475, 73.7902364],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_536da56e218233ea9d23fd665ffdacfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_046e5dd62ae10127e72c2bae218a8c54.setIcon(icon_536da56e218233ea9d23fd665ffdacfb);
+        
+    
+        var popup_62240c4f071e43164aa5c36fe626a580 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ddeecc55535fec007c480be461228f0 = $(`<div id="html_0ddeecc55535fec007c480be461228f0" style="width: 100.0%; height: 100.0%;">Nashik<br>Average Temperature: 22.76°C</div>`)[0];
+                popup_62240c4f071e43164aa5c36fe626a580.setContent(html_0ddeecc55535fec007c480be461228f0);
+            
+        
+
+        marker_046e5dd62ae10127e72c2bae218a8c54.bindPopup(popup_62240c4f071e43164aa5c36fe626a580)
+        ;
+
+        
+    
+    
+            var marker_d803f87265bd9b166532fc6103c52f79 = L.marker(
+                [18.2822454, 76.0588166],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_f9d11ff114db8374866a5b7bbabb9696 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d803f87265bd9b166532fc6103c52f79.setIcon(icon_f9d11ff114db8374866a5b7bbabb9696);
+        
+    
+        var popup_41ee876a8c9a1192c290bd86b1e11cd7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_967a2633affdc3db40025b5b89817a3b = $(`<div id="html_967a2633affdc3db40025b5b89817a3b" style="width: 100.0%; height: 100.0%;">Osmanabad<br>Average Temperature: 23.11°C</div>`)[0];
+                popup_41ee876a8c9a1192c290bd86b1e11cd7.setContent(html_967a2633affdc3db40025b5b89817a3b);
+            
+        
+
+        marker_d803f87265bd9b166532fc6103c52f79.bindPopup(popup_41ee876a8c9a1192c290bd86b1e11cd7)
+        ;
+
+        
+    
+    
+            var marker_dd35d1988a2ebbd544b998afdd90666e = L.marker(
+                [19.757249, 73.0931199],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_373e9f629819012e8344a22a0e0d4a62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dd35d1988a2ebbd544b998afdd90666e.setIcon(icon_373e9f629819012e8344a22a0e0d4a62);
+        
+    
+        var popup_29a3841bf3ade77bd00504818054c5b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ce41449c01bf4f10b3ed3eae7223d03 = $(`<div id="html_0ce41449c01bf4f10b3ed3eae7223d03" style="width: 100.0%; height: 100.0%;">Palghar<br>Average Temperature: 27.21°C</div>`)[0];
+                popup_29a3841bf3ade77bd00504818054c5b9.setContent(html_0ce41449c01bf4f10b3ed3eae7223d03);
+            
+        
+
+        marker_dd35d1988a2ebbd544b998afdd90666e.bindPopup(popup_29a3841bf3ade77bd00504818054c5b9)
+        ;
+
+        
+    
+    
+            var marker_d58fcf887e48b97bceacefe48d68e572 = L.marker(
+                [19.2901981, 76.6026443],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_5066fe4b51d179ca4432feb1a2896ae4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d58fcf887e48b97bceacefe48d68e572.setIcon(icon_5066fe4b51d179ca4432feb1a2896ae4);
+        
+    
+        var popup_02c9ed69247f5c2566c229e7cf775088 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d7cf2341d9f7343f02a24299a182b53 = $(`<div id="html_0d7cf2341d9f7343f02a24299a182b53" style="width: 100.0%; height: 100.0%;">Parbhani<br>Average Temperature: 24.49°C</div>`)[0];
+                popup_02c9ed69247f5c2566c229e7cf775088.setContent(html_0d7cf2341d9f7343f02a24299a182b53);
+            
+        
+
+        marker_d58fcf887e48b97bceacefe48d68e572.bindPopup(popup_02c9ed69247f5c2566c229e7cf775088)
+        ;
+
+        
+    
+    
+            var marker_6f66b746a5b825cd7c26842a7cd53844 = L.marker(
+                [18.521428, 73.8544541],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_d5e0675a3ac190ffb982d913794770ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6f66b746a5b825cd7c26842a7cd53844.setIcon(icon_d5e0675a3ac190ffb982d913794770ec);
+        
+    
+        var popup_1591347a7e97df7d8b64b486c36efb29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_334496f62d45a1e9fd728c039f591055 = $(`<div id="html_334496f62d45a1e9fd728c039f591055" style="width: 100.0%; height: 100.0%;">Pune<br>Average Temperature: 23.99°C</div>`)[0];
+                popup_1591347a7e97df7d8b64b486c36efb29.setContent(html_334496f62d45a1e9fd728c039f591055);
+            
+        
+
+        marker_6f66b746a5b825cd7c26842a7cd53844.bindPopup(popup_1591347a7e97df7d8b64b486c36efb29)
+        ;
+
+        
+    
+    
+            var marker_26cf3d80a867f23ecdfc7763fd82e2ae = L.marker(
+                [17.2826079, 73.4569787],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_f4192c3ac1b77e3cbafe7061554e9c65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_26cf3d80a867f23ecdfc7763fd82e2ae.setIcon(icon_f4192c3ac1b77e3cbafe7061554e9c65);
+        
+    
+        var popup_ebec84f95d9ab9eedbce247a90f220e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84939973628f18f9b2d87177c6afd9ee = $(`<div id="html_84939973628f18f9b2d87177c6afd9ee" style="width: 100.0%; height: 100.0%;">Ratnagiri<br>Average Temperature: 26.99°C</div>`)[0];
+                popup_ebec84f95d9ab9eedbce247a90f220e2.setContent(html_84939973628f18f9b2d87177c6afd9ee);
+            
+        
+
+        marker_26cf3d80a867f23ecdfc7763fd82e2ae.bindPopup(popup_ebec84f95d9ab9eedbce247a90f220e2)
+        ;
+
+        
+    
+    
+            var marker_0a2fe5b9c94df3bebc223d3c0e800650 = L.marker(
+                [17.1726928, 74.5867654],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_dbd8f77258d96575e0f23ea5867f5429 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a2fe5b9c94df3bebc223d3c0e800650.setIcon(icon_dbd8f77258d96575e0f23ea5867f5429);
+        
+    
+        var popup_8f44ab9fbd11ebf40ecb8261d58bddc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c06c46519bc02a0ae994aa6881736c8 = $(`<div id="html_3c06c46519bc02a0ae994aa6881736c8" style="width: 100.0%; height: 100.0%;">Sangli<br>Average Temperature: 23.21°C</div>`)[0];
+                popup_8f44ab9fbd11ebf40ecb8261d58bddc5.setContent(html_3c06c46519bc02a0ae994aa6881736c8);
+            
+        
+
+        marker_0a2fe5b9c94df3bebc223d3c0e800650.bindPopup(popup_8f44ab9fbd11ebf40ecb8261d58bddc5)
+        ;
+
+        
+    
+    
+            var marker_161ca1f50af1b29522a0b7ad1c1419f6 = L.marker(
+                [17.6361288, 74.2982781],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_6e03fa17ed5551042893a07ce4f0a51e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_161ca1f50af1b29522a0b7ad1c1419f6.setIcon(icon_6e03fa17ed5551042893a07ce4f0a51e);
+        
+    
+        var popup_0f487a57b3f597fa77fa7793eb29226b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2c36d06b6135effbb2459ed4a641e1c = $(`<div id="html_c2c36d06b6135effbb2459ed4a641e1c" style="width: 100.0%; height: 100.0%;">Satara<br>Average Temperature: 21.89°C</div>`)[0];
+                popup_0f487a57b3f597fa77fa7793eb29226b.setContent(html_c2c36d06b6135effbb2459ed4a641e1c);
+            
+        
+
+        marker_161ca1f50af1b29522a0b7ad1c1419f6.bindPopup(popup_0f487a57b3f597fa77fa7793eb29226b)
+        ;
+
+        
+    
+    
+            var marker_65b7dc53418b0708c1907318a998b48a = L.marker(
+                [17.8499067, 75.2763203],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_cd1a5811a6a42032dc4adadb259ee907 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_65b7dc53418b0708c1907318a998b48a.setIcon(icon_cd1a5811a6a42032dc4adadb259ee907);
+        
+    
+        var popup_e0e79531446a84c0c410e044a5c7f33d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5b3f5dfd0ec1c768b4aaea96ff2489d = $(`<div id="html_f5b3f5dfd0ec1c768b4aaea96ff2489d" style="width: 100.0%; height: 100.0%;">Solapur<br>Average Temperature: 24.69°C</div>`)[0];
+                popup_e0e79531446a84c0c410e044a5c7f33d.setContent(html_f5b3f5dfd0ec1c768b4aaea96ff2489d);
+            
+        
+
+        marker_65b7dc53418b0708c1907318a998b48a.bindPopup(popup_e0e79531446a84c0c410e044a5c7f33d)
+        ;
+
+        
+    
+    
+            var marker_0a276eb37fc1e24ba03c3fc97c266b0c = L.marker(
+                [19.1943294, 72.9701779],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_2d9501416a1195618b71b786a0ccb8a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a276eb37fc1e24ba03c3fc97c266b0c.setIcon(icon_2d9501416a1195618b71b786a0ccb8a2);
+        
+    
+        var popup_657a693ff42d5582c2e6706d86c22f0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_945578b4341a0f600fcc0e1006a4add1 = $(`<div id="html_945578b4341a0f600fcc0e1006a4add1" style="width: 100.0%; height: 100.0%;">Thane<br>Average Temperature: 27.45°C</div>`)[0];
+                popup_657a693ff42d5582c2e6706d86c22f0d.setContent(html_945578b4341a0f600fcc0e1006a4add1);
+            
+        
+
+        marker_0a276eb37fc1e24ba03c3fc97c266b0c.bindPopup(popup_657a693ff42d5582c2e6706d86c22f0d)
+        ;
+
+        
+    
+    
+            var marker_f8fdcf6220ecb996cf7708489975488e = L.marker(
+                [20.8256231, 78.6131455],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_95ef778f2276bc4897647ef7a795773e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f8fdcf6220ecb996cf7708489975488e.setIcon(icon_95ef778f2276bc4897647ef7a795773e);
+        
+    
+        var popup_c0b286d77c7525790da63bae91551db4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79be55780f4d73cef36eaa9bd17b1634 = $(`<div id="html_79be55780f4d73cef36eaa9bd17b1634" style="width: 100.0%; height: 100.0%;">Wardha<br>Average Temperature: 24.85°C</div>`)[0];
+                popup_c0b286d77c7525790da63bae91551db4.setContent(html_79be55780f4d73cef36eaa9bd17b1634);
+            
+        
+
+        marker_f8fdcf6220ecb996cf7708489975488e.bindPopup(popup_c0b286d77c7525790da63bae91551db4)
+        ;
+
+        
+    
+    
+            var marker_7904a102fe40a2d7779f54db9cedc36d = L.marker(
+                [20.2874178, 77.2369655],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_c97b1e83f2070b6b6de52bb61e5465b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7904a102fe40a2d7779f54db9cedc36d.setIcon(icon_c97b1e83f2070b6b6de52bb61e5465b2);
+        
+    
+        var popup_d3a658375440ecb845adc30012709b38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00e83671206f617ab5143ebcefec4093 = $(`<div id="html_00e83671206f617ab5143ebcefec4093" style="width: 100.0%; height: 100.0%;">Washim<br>Average Temperature: 23.58°C</div>`)[0];
+                popup_d3a658375440ecb845adc30012709b38.setContent(html_00e83671206f617ab5143ebcefec4093);
+            
+        
+
+        marker_7904a102fe40a2d7779f54db9cedc36d.bindPopup(popup_d3a658375440ecb845adc30012709b38)
+        ;
+
+        
+    
+    
+            var marker_ccf2f6fef9fc3214c6a840a9568ee053 = L.marker(
+                [20.0638677, 78.3565663],
+                {}
+            ).addTo(map_f139ad92c0f632c88a61850d59cf3bd8);
+        
+    
+            var icon_987255a4d5e45ae0f1724207666da4a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ccf2f6fef9fc3214c6a840a9568ee053.setIcon(icon_987255a4d5e45ae0f1724207666da4a3);
+        
+    
+        var popup_66ba4e2d0ed17f47f745be1f61decee1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ad1be39f036bbb3e9624ec7d4aa0c01 = $(`<div id="html_9ad1be39f036bbb3e9624ec7d4aa0c01" style="width: 100.0%; height: 100.0%;">Yavatmal<br>Average Temperature: 24.29°C</div>`)[0];
+                popup_66ba4e2d0ed17f47f745be1f61decee1.setContent(html_9ad1be39f036bbb3e9624ec7d4aa0c01);
+            
+        
+
+        marker_ccf2f6fef9fc3214c6a840a9568ee053.bindPopup(popup_66ba4e2d0ed17f47f745be1f61decee1)
+        ;
+
+        
+    
+</script>
+</html>
