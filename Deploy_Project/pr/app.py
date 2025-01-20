@@ -5,7 +5,7 @@ import glob
 import zipfile
 import tempfile
 from datetime import datetime
-import urllib.request
+import urllib3
 
 # Page configuration
 st.set_page_config(
@@ -49,11 +49,21 @@ st.markdown("""
 def load_model():
     model_path = 'spam_classifier.pkl'
     if not os.path.exists(model_path):
-        url = 'https://github.com/Sumit-Telawane/Data-science/blob/main/Deploy_Project/pr/spam_classifier.pkl'
-        urllib.request.urlretrieve(url, model_path)
+        url = 'https://github.com/Sumit-Telawane/Data-science/raw/main/Deploy_Project/pr/spam_classifier.pkl'
+        http = urllib3.PoolManager()
+        response = http.request('GET', url, preload_content=False)
+        if response.status == 200:
+            with open(model_path, 'wb') as out_file:
+                while True:
+                    data = response.read(1024)
+                    if not data:
+                        break
+                    out_file.write(data)
+            response.release_conn()
+        else:
+            response.release_conn()
+            raise Exception(f"Failed to download the model. HTTP status code: {response.status}")
     return joblib.load(model_path)
-
-clf = load_model()
 
 # Header section
 st.markdown("""
