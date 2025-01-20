@@ -5,6 +5,7 @@ import glob
 import zipfile
 import tempfile
 from datetime import datetime
+import urllib.request
 
 # Page configuration
 st.set_page_config(
@@ -46,7 +47,11 @@ st.markdown("""
 # Load the model
 @st.cache_resource
 def load_model():
-    return joblib.load('spam_classifier.pkl')
+    model_path = 'spam_classifier.pkl'
+    if not os.path.exists(model_path):
+        url = 'https://github.com/Sumit-Telawane/Data-science/blob/main/Deploy_Project/pr/spam_classifier.pkl'
+        urllib.request.urlretrieve(url, model_path)
+    return joblib.load(model_path)
 
 clf = load_model()
 
