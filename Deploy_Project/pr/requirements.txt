@@ -1,3 +1,4 @@
 streamlit
 joblib
 urllib3
+scikit-learn
