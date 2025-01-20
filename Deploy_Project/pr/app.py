@@ -65,6 +65,8 @@ def load_model():
             raise Exception(f"Failed to download the model. HTTP status code: {response.status}")
     return joblib.load(model_path)
 
+clf = load_model()
+
 # Header section
 st.markdown("""
     <h1 style='text-align: center; color: #ff4b4b; margin-bottom: 2rem;'>
